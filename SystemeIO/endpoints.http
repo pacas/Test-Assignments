@@ -1,0 +1,33 @@
+### GET price
+GET http://127.0.0.1:8000/api/price
+Accept: application/json
+
+{
+    "product": "1",
+    "taxNumber": "DE123456789",
+    "couponCode": "D15",
+    "paymentProcessor": "paypal"
+}
+
+### POST pay
+POST http://127.0.0.1:8000/api/pay
+Accept: application/json
+
+{
+    "product": "1",
+    "taxNumber": "DE123456789",
+    "couponCode": "D15",
+    "paymentProcessor": "paypal"
+}
+
+### GET product
+GET http://127.0.0.1:8000/api/product/1
+
+### POST product
+POST http://127.0.0.1:8000/api/product
+Accept: application/json
+
+{
+    "name": "PC",
+    "price": "1020"
+}

@@ -1,0 +1,1998 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Lang" content="en">
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Тестовое задание</title>
+
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 700px;
+		}
+
+		table th {
+			background: #EEE;
+			border: 1px solid #CCC;
+		}
+		table td {
+			border: 1px solid #CCC;
+		}
+	</style>
+</head>
+<body>
+	<h1>Тестовое задание</h1>
+	<p>
+		Задания, описанные ниже не сложные, но каждое их них может иметь некоторые подводные камни, обойти которые поможет умение разбираться в документации и решать возникающие проблемы. Задания связаны между собой логически, но если какое-либо задание сделать по каким-либо причинам не удается, можно приступать к следующему, задав ему необходимые входные данные. Скрипты должны работать на PHP 8.1.
+	</p>
+
+	<h2>Задача #1</h2>
+	<p>
+		Используя curl (<a href="http://php.net/manual/en/book.curl.php">http://php.net/manual/en/book.curl.php</a>), получить контент с данной страницы (http://cbonds.info/sandbox/some_source.php) и записать его в файл (<strong>server_data.html</strong>)
+	</p>
+
+	<h2>Задача #2</h2>
+	<p>
+		Используя регулярные выражения PCRE (<a href="http://php.net/manual/en/book.pcre.php">http://php.net/manual/en/book.pcre.php</a>), разобрать данные из таблицы (<a href="#stable">Some table</a>) и сформировать из них xml-файл (<strong>emissions.xml</strong>) следующего формата:
+		<pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;items&gt;
+	&lt;item&gt;
+		&lt;property title=&quot;&#1069;&#1084;&#1080;&#1090;&#1077;&#1085;&#1090;&quot;&gt;&lt;![CDATA[&#1054;&#1090;&#1082;&#1088;&#1099;&#1090;&#1086;&#1077; &#1072;&#1082;&#1094;&#1080;&#1086;&#1085;&#1077;&#1088;&#1085;&#1086;&#1077; &#1086;&#1073;&#1097;&#1077;&#1089;&#1090;&#1074;&#1086; &quot;&#1040;&#1052;&#1059;&#1056;&#1052;&#1045;&#1058;&#1040;&#1051;&#1051;&quot;]]&gt;&lt;/property&gt;
+		&lt;property title=&quot;&#1069;&#1084;&#1080;&#1090;&#1077;&#1085;&#1090; (&#1082;&#1088;&#1072;&#1090;&#1082;&#1086;)&quot;&gt;&lt;![CDATA[&#1058;&#1043;&#1050;-2]]&gt;&lt;/property&gt;
+		&lt;!-- ... &#1076;&#1083;&#1103; &#1082;&#1072;&#1078;&#1076;&#1086;&#1075;&#1086; &#1089;&#1074;&#1086;&#1081;&#1089;&#1090;&#1074;&#1072; &#1074; &#1090;&#1072;&#1073;&#1083;&#1080;&#1094;&#1077; --&gt;
+	&lt;/item&gt;
+	&lt;item&gt;
+		&lt;property title=&quot;&#1069;&#1084;&#1080;&#1090;&#1077;&#1085;&#1090;&quot;&gt;&lt;![CDATA[&#1054;&#1090;&#1082;&#1088;&#1099;&#1090;&#1086;&#1077; &#1072;&#1082;&#1094;&#1080;&#1086;&#1085;&#1077;&#1088;&#1085;&#1086;&#1077; &#1086;&#1073;&#1097;&#1077;&#1089;&#1090;&#1074;&#1086; &quot;&#1053;&#1077;&#1092;&#1090;&#1103;&#1085;&#1072;&#1103; &#1082;&#1086;&#1084;&#1087;&#1072;&#1085;&#1080;&#1103; &quot;&#1051;&#1059;&#1050;&#1054;&#1049;&#1051;&quot;&quot;]]&gt;&lt;/property&gt;
+		&lt;property title=&quot;&#1069;&#1084;&#1080;&#1090;&#1077;&#1085;&#1090; (&#1082;&#1088;&#1072;&#1090;&#1082;&#1086;)&quot;&gt;&lt;![CDATA[&#1051;&#1059;&#1050;&#1054;&#1049;&#1051;]]&gt;&lt;/property&gt;
+		&lt;!-- ... &#1076;&#1083;&#1103; &#1082;&#1072;&#1078;&#1076;&#1086;&#1075;&#1086; &#1089;&#1074;&#1086;&#1081;&#1089;&#1090;&#1074;&#1072; &#1074; &#1090;&#1072;&#1073;&#1083;&#1080;&#1094;&#1077; --&gt;
+	&lt;/item&gt;
+	&lt;!-- ... &#1076;&#1083;&#1103; &#1082;&#1072;&#1078;&#1076;&#1086;&#1081; &#1089;&#1090;&#1088;&#1086;&#1082;&#1080; &#1074; &#1090;&#1072;&#1073;&#1083;&#1080;&#1094;&#1077; --&gt;
+&lt;items&gt;
+		</pre>
+		Для формирования xml-файла должен использоваться DOM (<a href="http://php.net/manual/en/book.dom.php">http://php.net/manual/en/book.dom.php</a>).
+	</p>
+    <h2>Задача #3</h2>
+    <p>
+        Предположим, что данные из таблицы "some table" требуется сохранять в БД: какой на ваш взгляд должна быть ее структура? <br />
+        Результатом должен быть sql_dump БД, структура таблиц которой реализует возможность хранения данных в нормализованном виде.
+    </p>
+
+    <h2>Задача #4</h2>
+	<p>
+		Составить запрос, который бы агрегировал данные из таблиц задания #3 по столбцу "Тип", суммиря столбец "номинал".
+        Записи неопределенного типа также должны войти в выборку. Сортировка должна вестись по убыванию суммы номиналов.<br>
+        Итоговая выборка в запросе должна содержать поля:<br>
+        <b>Тип</b> | <b>Номинал</b> | <b>Список эмитентов данного типа (перечисленных череp запятую)</b>.
+	</p>
+
+	<h1>Данные для задания:</h1>
+	<h3>Some table</h3>
+	<table id="stable" style="border-collapse:collapse;">
+	<thead><tr>
+	<th style='border:1px solid #CCC;background:#EEE'>Эмитент</th>
+
+	<th style='border:1px solid #CCC;background:#EEE'>Эмитент (кратко)</th>
+	<th style='border:1px solid #CCC;background:#EEE'>Тип</th>
+	<th style='border:1px solid #CCC;background:#EEE'>Выпуск</th>
+
+	<th style='border:1px solid #CCC;background:#EEE'>Номинал (р.)</th>
+
+	<th style='border:1px solid #CCC;background:#EEE'>Дата гос. регистрации</th>
+	<th style='border:1px solid #CCC;background:#EEE'>Дата регистрации отчета / Уведомления об итогах</th>	<th style='border:1px solid #CCC;background:#EEE'>Код гос. регистрации</th>
+
+	<th style='border:1px solid #CCC;background:#EEE'>Код ДКК</th>
+
+	<th style='border:1px solid #CCC;background:#EEE'>Код РТС</th>
+
+	<th style='border:1px solid #CCC;background:#EEE'>ISIN</th>
+	<th style='border:1px solid #CCC;background:#EEE'>Наличие блокировок</th>
+
+	<th style='border:1px solid #CCC;background:#EEE'>CFI</th>
+	<th style='border:1px solid #CCC;background:#EEE'>Лицевой счет ДКК</th>
+
+	<th style='border:1px solid #CCC;background:#EEE'>Вариант обслуживания</th>	<th style='border:1px solid #CCC;background:#EEE'>Наименование выпуска</th>
+
+</tr>
+<tbody><tr>
+	<td style='border:1px solid #CCC;'>Открытое акционерное общество "ОТП Банк" 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>ОАО "ОТП Банк" 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>Облигация биржевая</td>
+
+
+
+	<td style='border:1px solid #CCC;'>Вып. 1 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>1000 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>15.07.11 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>02.08.11 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>4B020102766B</td>
+	<td style='border:1px solid #CCC;'>RF0000017397 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'></td>
+
+
+	<td style='border:1px solid #CCC;'>RU000A0JRN37 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'> 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>Обл.ОТП Банк ОБ 01 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Открытое акционерное общество "Нефтегазовая компания "РуссНефть" 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>ОАО "НК "РуссНефть" 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'> 
+</td>	<td style='border:1px solid #CCC;'>Вып. 1 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>1000 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>24.11.05 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>12.01.06 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>4-01-39134-H 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>RF0000007906 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>RUSN01</td>
+
+
+	<td style='border:1px solid #CCC;'>RU000A0GKXJ3 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'></td>
+
+
+
+	<td style='border:1px solid #CCC;'></td>	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>Обл.НК РуссНефть 01 
+ 
+ 
+ 
+ 
+</td>
+
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Открытое акционерное общество "Аптечная сеть 36,6" 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>ОАО "Аптечная сеть 36,6" 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>Облигация АО 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>Вып. 2 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>200 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>21.05.09 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>25.06.09 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>4-02-07335-A</td>
+
+	<td style='border:1px solid #CCC;'>RF0000014704 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'></td>
+
+	<td style='border:1px solid #CCC;'>RU000A0JQ631 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>3290023081 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+</td>	<td style='border:1px solid #CCC;'>Обл.Апт.сеть 36,6 02 
+</td>
+
+
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Открытое акционерное общество "Дальневосточная генерирующая компания" 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>ОАО "Дальневосточная генерирующая компания" 
+ 
+ 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>Облигация АО 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>Вып. 1 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>1000 
+</td>
+
+	<td style='border:1px solid #CCC;'>09.08.07 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>19.03.08 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>4-01-32532-F 
+ 
+</td>	<td style='border:1px solid #CCC;'>RF0000012655 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>DVGC01</td>
+
+	<td style='border:1px solid #CCC;'>RU000A0JPP03 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>Обл. ДальнеВостГК 01 
+ 
+ 
+ 
+ 
+</td></tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Строительно-инвестиционная корпорация "Девелопмент-Юг" 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>ООО Строительно-инвестиционная корпорация "Девелопмент-Юг" 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'> 
+</td>
+
+	<td style='border:1px solid #CCC;'>Вып. 1 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>1000 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>26.09.06</td>
+	<td style='border:1px solid #CCC;'>07.06.07 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>4-01-36177-R 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>RF0000010918 
+</td>
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>RU000A0JP8B2 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'> 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>Обл.Девелоп-Юг 01 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Открытое акционерное общество "РБК" 
+</td>	<td style='border:1px solid #CCC;'>ОАО "РБК" 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>Вып. 4 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>1 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>23.03.10 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>02.06.10 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>4-04-56413-H 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>RF0000015746 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>RBCM04 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>RU000A0JQVD1 
+</td>
+
+	<td style='border:1px solid #CCC;'></td>
+
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>5144700008 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+ 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>Обл.РБК 04 
+ 
+</td>
+
+
+
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Открытое акционерное общество "Вимм-Билль-Данн Продукты Питания"</td>
+
+
+	<td style='border:1px solid #CCC;'>ОАО "ВБД ПП" 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>Облигация биржевая 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>Вып. 8</td>
+	<td style='border:1px solid #CCC;'>1000 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>20.11.09 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>15.10.10 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>4B02-08-06005-A 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>RF0000016388 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>RU000A0JR2X7 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'></td>
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>Обл. ВБД ПП ОБ 08 
+ 
+ 
+</td></tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Общество с ограниченной ответственностью "Севкабель-Финанс" 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>ООО "Севкабель-Финанс" 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>Вып. 3 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>1000 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>19.10.06</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>24.04.07</td>
+
+
+	<td style='border:1px solid #CCC;'>4-03-36062-R 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>RF0000010631 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>SVKF03 
+ 
+</td>	<td style='border:1px solid #CCC;'>RU000A0JP567 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'></td>
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>Обл.СевкабельФин 03 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Министерство финансов Российской Федерации 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>МинФин РФ 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>Облигация федерального займа с амортизацией долга 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>1000 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>12.02.07 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>21.02.07 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>46021RMFS 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>RF0000017879 
+ 
+</td>
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>RU000A0JP2S9 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>Обл.Минфин 46021 АД 
+ 
+ 
+ 
+</td>
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Коммерческий банк "Московское ипотечное агентство" (Открытое акционерное общество) 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>КБ МИА 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>Вып. 3 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>1000 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>18.01.06 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>16.03.06 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>40303344B 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>RF0000008303 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>MIAB03 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>RU000A0GN9M2 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>Обл.КБ МИА 03 
+ 
+ 
+</td>
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Общество с Ограниченной Ответственностью "ЕвразХолдинг Финанс"</td>	<td style='border:1px solid #CCC;'>ООО "ЕвразХолдинг Финанс" 
+ 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>Облигация ООО</td>
+
+
+	<td style='border:1px solid #CCC;'>Вып. 4 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>1000 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>10.12.09 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>02.11.10 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>4-04-36383-R 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>RF0000016442 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>EZHF04 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>RU000A0JR3Q9 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>Обл.ЕвразХолдФин 04 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Министерство финансов Республики Коми 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>МФ РК 
+</td>	<td style='border:1px solid #CCC;'>Облигация субъектов федерации 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>Вып. 9 
+ 
+</td>	<td style='border:1px solid #CCC;'>1000 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>04.10.10 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>RU34009KOM0 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>RF0000016404 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>KOMR09 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>RU000A0JR3B1</td>
+
+	<td style='border:1px solid #CCC;'></td>	<td style='border:1px solid #CCC;'></td>
+
+
+	<td style='border:1px solid #CCC;'>2 
+ 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>Обл.Респ.Коми 09 
+ 
+</td>
+
+
+
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Открытое акционерное общество "Российский сельскохозяйственный банк" 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>ОАО "Россельхозбанк" 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>Облигация АО 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>Вып. 14</td>	<td style='border:1px solid #CCC;'>1000</td>
+
+
+	<td style='border:1px solid #CCC;'>11.02.11</td>
+
+	<td style='border:1px solid #CCC;'>18.07.11 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>41403349B 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>RF0000017354</td>
+	<td style='border:1px solid #CCC;'>RSHB14 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>RU000A0JRLE8 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+</td>
+
+
+	<td style='border:1px solid #CCC;'> 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>Обл.Россельхозбанк14 
+ 
+ 
+ 
+</td>
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Открытое акционерное общество "Балтийский Инвестиционный Банк" 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>ОАО "БАЛТИНВЕСТБАНК" 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>Облигация АО 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>Вып. 2 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>1000 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>17.09.09</td>
+	<td style='border:1px solid #CCC;'>01.11.10 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>40203176B 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>RF0000016265 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'></td>
+	<td style='border:1px solid #CCC;'>RU000A0JR0W3 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>Обл.БалтИнвБанк 02 
+ 
+ 
+ 
+ 
+</td>
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Открытое Акционерное Общество "БИНБАНК" 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>ОАО "БИНБАНК" 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'></td>	<td style='border:1px solid #CCC;'>Вып. 2 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>1000 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>15.12.09 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>28.06.10 
+</td>
+	<td style='border:1px solid #CCC;'>40202562B 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>RF0000015718 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>BBIN02 
+</td>	<td style='border:1px solid #CCC;'>RU000A0JQUY9 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>Обл. БИНБАНК 02 
+ 
+</td>
+
+
+
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Министерство финансов Республики Карелия 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>Министерство финансов Республики Карелия 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>Вып. 14 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>1000 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>18.11.11 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>RU34014KAR0</td>
+	<td style='border:1px solid #CCC;'>RF0000017701 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'></td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>RU000A0JRYA9 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'> 
+ 
+</td>	<td style='border:1px solid #CCC;'> 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>Обл.Респ.Карелия 14 
+ 
+ 
+ 
+</td>
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Банк ВТБ (открытое акционерное общество) 
+</td>
+
+	<td style='border:1px solid #CCC;'>ОАО Банк ВТБ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>Вып. 5</td>
+	<td style='border:1px solid #CCC;'>1000 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>05.02.10</td>
+
+
+	<td style='border:1px solid #CCC;'>19.03.10</td>
+
+	<td style='border:1px solid #CCC;'>4B020501000B 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>RF0000015612 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>RU000A0JQTB9 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>Обл.Банк ВТБ ОБ5 
+ 
+ 
+</td>
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>"Московский Кредитный Банк" (открытое акционерное общество) 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>ОАО "Московский Кредитный Банк" 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'></td>
+
+
+
+	<td style='border:1px solid #CCC;'>Вып. 1 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>1000 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>15.10.10 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>22.02.11 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>4B020101978B 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>RF0000016884</td>	<td style='border:1px solid #CCC;'> 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>RU000A0JR8T2 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'> 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>Обл. МКБ ОБ01 
+</td>
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Общество с ограниченной ответственностью "Белон-Финанс" 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>ООО "Белон-Финанс"</td>
+
+	<td style='border:1px solid #CCC;'>Облигация ООО 
+ 
+</td>	<td style='border:1px solid #CCC;'>Вып. 2 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>1000</td>
+
+	<td style='border:1px solid #CCC;'>11.04.06 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>19.04.07 
+</td>	<td style='border:1px solid #CCC;'>4-02-36138-R 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>RF0000008824 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>BLNF02</td>
+
+	<td style='border:1px solid #CCC;'>RU000A0JP344 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'> 
+</td>	<td style='border:1px solid #CCC;'> 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+</td>	<td style='border:1px solid #CCC;'>Обл.Белон-Финанс 02 
+ 
+ 
+ 
+</td>
+
+
+
+
+</tr>
+<tr>
+	<td style='border:1px solid #CCC;'>Открытое акционерное общество междугородной и международной электрической связи "Ростелеком" 
+ 
+ 
+ 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>ОАО "Ростелеком" 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'>Облигация АО 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>Вып. 13 
+ 
+ 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>1000 
+ 
+</td>	<td style='border:1px solid #CCC;'>15.02.11 
+</td>
+
+	<td style='border:1px solid #CCC;'>05.05.11 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>4-16-00124-A 
+ 
+ 
+ 
+ 
+</td>
+
+
+	<td style='border:1px solid #CCC;'>RF0000017025 
+ 
+ 
+ 
+</td>	<td style='border:1px solid #CCC;'>RTKM13</td>
+
+
+
+
+	<td style='border:1px solid #CCC;'>RU000A0JRDT3</td>
+
+	<td style='border:1px solid #CCC;'> 
+</td>	<td style='border:1px solid #CCC;'> 
+</td>
+
+
+
+	<td style='border:1px solid #CCC;'> 
+ 
+ 
+</td>
+
+	<td style='border:1px solid #CCC;'>Облигации (основной) 
+ 
+</td>
+	<td style='border:1px solid #CCC;'>Обл. Ростелеком 16 
+ 
+ 
+ 
+ 
+ 
+</td>
+
+
+
+
+</tr>
+</tbody>	</table>
+</body>
+</html>

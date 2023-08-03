@@ -1,0 +1,16 @@
+{
+  "autoload": {
+    "files": [
+      "src/SessionService.php",
+      "src/TaskOne.php",
+      "src/TaskTwo.php"
+    ]
+  },
+  "require": {
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "ext-simplexml": "*",
+    "ext-iconv": "*",
+    "ext-mbstring": "*"
+  }
+}

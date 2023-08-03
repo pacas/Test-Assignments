@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+  <item>
+    <property title="Эмитент"><![CDATA[Общество с ограниченной ответственностью "Кузбассэнерго-Финанс"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ООО "Кузбассэнерго-Финанс"]]></property>
+    <property title="Тип"/>
+    <property title="Выпуск"><![CDATA[Вып. 1]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[07.04.11]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[14.07.11]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4-01-36401-R]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000017323]]></property>
+    <property title="Код РТС"/>
+    <property title="ISIN"><![CDATA[RU000A0JRKN1]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.КузбассэнФин 01]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Общество с ограниченной ответственностью "Росгосстрах"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ООО "Росгосстрах"]]></property>
+    <property title="Тип"/>
+    <property title="Выпуск"><![CDATA[Вып. 1]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[15.04.10]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[03.08.10]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4-01-36389-R]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000016052]]></property>
+    <property title="Код РТС"><![CDATA[RSGS01]]></property>
+    <property title="ISIN"><![CDATA[RU000A0JQYA1]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.Росгосстрах 01]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Открытое акционерное общество "Первый Объединенный Банк"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ОАО  "Первый Объединенный Банк"]]></property>
+    <property title="Тип"/>
+    <property title="Выпуск"><![CDATA[Вып. 3]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[12.01.11]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[14.04.11]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4B020203461B]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000017120]]></property>
+    <property title="Код РТС"/>
+    <property title="ISIN"><![CDATA[RU000A0JREP9]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.ПервОбъБанк ОБ03]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Открытое акционерное общество "Новолипецкий металлургический комбинат"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ОАО "НЛМК"]]></property>
+    <property title="Тип"><![CDATA[Облигация биржевая]]></property>
+    <property title="Выпуск"><![CDATA[Вып. 3]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[19.10.09]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[21.12.11]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4B02-03-00102-A]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000017750]]></property>
+    <property title="Код РТС"><![CDATA[RU000A0JS1D0]]></property>
+    <property title="ISIN"><![CDATA[RU000A0JS1D0]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.Новолип.м.к. ОБ3]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Министерство финансов Республики Карелия]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[Министерство финансов Республики Карелия]]></property>
+    <property title="Тип"><![CDATA[Облигация субъектов федерации]]></property>
+    <property title="Выпуск"><![CDATA[Вып. 13]]></property>
+    <property title="Номинал (р.)"><![CDATA[870]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[11.06.10]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[24.06.10]]></property>
+    <property title="Код гос. регистрации"><![CDATA[RU34013KAR0]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000015911]]></property>
+    <property title="Код РТС"><![CDATA[KARR13]]></property>
+    <property title="ISIN"><![CDATA[RU000A0JQX51]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.Респ.Карелия 13]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Открытое акционерное общество "Московская областная газовая компания"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ОАО "Московская областная газовая компания"]]></property>
+    <property title="Тип"/>
+    <property title="Выпуск"><![CDATA[Вып. 1]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[19.04.07]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[22.06.07]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4-01-11261-A]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000010911]]></property>
+    <property title="Код РТС"><![CDATA[MOGZ01]]></property>
+    <property title="ISIN"><![CDATA[RU000A0JP7X8]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл. Мособлгаз 01]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Министерство финансов Иркутской области]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[Министерство финансов Иркутской области]]></property>
+    <property title="Тип"><![CDATA[Облигация муниципальная]]></property>
+    <property title="Выпуск"><![CDATA[Вып. 7]]></property>
+    <property title="Номинал (р.)"><![CDATA[520]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[21.12.09]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[25.12.09]]></property>
+    <property title="Код гос. регистрации"><![CDATA[RU31007IRK0]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000016648]]></property>
+    <property title="Код РТС"/>
+    <property title="ISIN"><![CDATA[RU000A0JQPH4]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.МФ ИркутскОбл 07]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Общество с ограниченной ответственностью "РСГ-Финанс"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ООО "РСГ-Финанс"]]></property>
+    <property title="Тип"><![CDATA[Облигация ООО]]></property>
+    <property title="Выпуск"><![CDATA[Вып. 1]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[16.12.11]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[23.06.11]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4-01-36399-R]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000017315]]></property>
+    <property title="Код РТС"><![CDATA[RSGF01]]></property>
+    <property title="ISIN"><![CDATA[RU000A0JRK63]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.РСГ-Финанс 01]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Правительство Москвы в лице Департамента финансов города Москвы]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[Правительство Москвы в лице Департамента финансов г. Москвы]]></property>
+    <property title="Тип"/>
+    <property title="Выпуск"><![CDATA[вып. 50]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[14.11.06]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"/>
+    <property title="Код гос. регистрации"><![CDATA[RU25050MOS0]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000009904]]></property>
+    <property title="Код РТС"><![CDATA[MOS050]]></property>
+    <property title="ISIN"><![CDATA[RU000A0JNYM3]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[ОблГорЗаймМосквы 50]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Открытое акционерное общество "Шестая генерирующая компания оптового рынка электроэнергии"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ОАО "ОГК-6"]]></property>
+    <property title="Тип"/>
+    <property title="Выпуск"><![CDATA[Вып. 1]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[22.03.07]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[31.05.07]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4-01-65106-D]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000010802]]></property>
+    <property title="Код РТС"><![CDATA[OGKF01]]></property>
+    <property title="ISIN"><![CDATA[RU000A0JP6X0]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл. ОГК-6 01]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Правительство Москвы в лице Департамента финансов города Москвы]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[Правительство Москвы в лице Департамента финансов г. Москвы]]></property>
+    <property title="Тип"/>
+    <property title="Выпуск"><![CDATA[доп. выпуск 61]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[05.05.09]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"/>
+    <property title="Код гос. регистрации"><![CDATA[RU25061MOS0]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000014657]]></property>
+    <property title="Код РТС"><![CDATA[MOS061]]></property>
+    <property title="ISIN"><![CDATA[RU000A0JQ5K8]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[ОблГорЗаймМосквы 61]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Общество с ограниченной ответственностью "Держава-Финанс"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ООО "Держава-Финанс"]]></property>
+    <property title="Тип"><![CDATA[Облигация ООО]]></property>
+    <property title="Выпуск"><![CDATA[Вып. 1]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[26.09.06]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[20.09.07]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4-01-36175-R]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000011450]]></property>
+    <property title="Код РТС"/>
+    <property title="ISIN"><![CDATA[RU000A0JPCL6]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.Держава-Фин.01]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Государственная корпорация "Банк развития и внешнеэкономической деятельности (Внешэкономбанк)"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[Внешэкономбанк]]></property>
+    <property title="Тип"/>
+    <property title="Выпуск"><![CDATA[Вып. 9]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[05.10.10]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[20.04.11]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4-09-00004-T]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000017062]]></property>
+    <property title="Код РТС"/>
+    <property title="ISIN"><![CDATA[RU000A0JRCX7]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.Внешэкономбанк09]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Общество с ограниченной ответственностью "НС-финанс"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ООО "НС-финанс"]]></property>
+    <property title="Тип"><![CDATA[Облигация биржевая]]></property>
+    <property title="Выпуск"><![CDATA[Вып. 1]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[26.04.11]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[06.05.11]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4B02-01-36311-R]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000017192]]></property>
+    <property title="Код РТС"/>
+    <property title="ISIN"><![CDATA[RU000A0JRGA6]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл. НС-финанс ОБ01]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Правительство Москвы в лице Департамента финансов города Москвы]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[Правительство Москвы в лице Департамента финансов г. Москвы]]></property>
+    <property title="Тип"/>
+    <property title="Выпуск"><![CDATA[вып. 49]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[14.11.06]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"/>
+    <property title="Код гос. регистрации"><![CDATA[RU32049MOS0]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000009903]]></property>
+    <property title="Код РТС"><![CDATA[MOS049]]></property>
+    <property title="ISIN"><![CDATA[RU000A0JNYP6]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[ОблГорЗаймМосквы 49]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Открытое акционерное общество "Ханты-Мансийский банк"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[Ханты-Мансийский банк]]></property>
+    <property title="Тип"><![CDATA[Облигация АО]]></property>
+    <property title="Выпуск"><![CDATA[Вып. 1]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[08.07.08]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[10.11.08]]></property>
+    <property title="Код гос. регистрации"><![CDATA[40101971B]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000014003]]></property>
+    <property title="Код РТС"><![CDATA[KHMB01]]></property>
+    <property title="ISIN"><![CDATA[RU000A0JQ0G7]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.ХантМанБанк01]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Общество с ограниченной ответственностью "Интегра Финанс"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ОАО "Интегра Финанс"]]></property>
+    <property title="Тип"/>
+    <property title="Выпуск"><![CDATA[Вып. 2]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[17.10.06]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[21.12.06]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4-02-36130-R]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000009888]]></property>
+    <property title="Код РТС"><![CDATA[INTF02]]></property>
+    <property title="ISIN"><![CDATA[RU000A0JNXX2]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.Интегра Фин 02]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Открытое акционерное общество "Авиационная компания "ТРАНСАЭРО"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ОАО "АК "ТРАНСАЭРО"]]></property>
+    <property title="Тип"/>
+    <property title="Выпуск"><![CDATA[Вып. 1]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[16.08.11]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[06.03.12]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4B02-01-00165-A]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000018078]]></property>
+    <property title="Код РТС"/>
+    <property title="ISIN"><![CDATA[RU000A0JS4W4]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"><![CDATA[3290023081]]></property>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.ТРАНСАЭРО ОБ1]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[Общество с ограниченной ответственностью "Малые продуктовые магазины "Магнолия"]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ООО "МПМ "Магнолия"]]></property>
+    <property title="Тип"><![CDATA[Облигация АО]]></property>
+    <property title="Выпуск"><![CDATA[Вып. 1]]></property>
+    <property title="Номинал (р.)"><![CDATA[1000]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[05.07.07]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[21.08.07]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4-01-36274-R]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000011439]]></property>
+    <property title="Код РТС"><![CDATA[MPMM01]]></property>
+    <property title="ISIN"><![CDATA[RU000A0JPCE1]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.Магнолия 01]]></property>
+  </item>
+  <item>
+    <property title="Эмитент"><![CDATA[ВТБ Лизинг Финанс (общество с ограниченной ответственностью)]]></property>
+    <property title="Эмитент (кратко)"><![CDATA[ООО ВТБ Лизинг Финанс]]></property>
+    <property title="Тип"/>
+    <property title="Выпуск"><![CDATA[Вып. 3]]></property>
+    <property title="Номинал (р.)"><![CDATA[769.24]]></property>
+    <property title="Дата гос. регистрации"><![CDATA[19.06.08]]></property>
+    <property title="Дата регистрации отчета / Уведомления об итогах"><![CDATA[30.06.09]]></property>
+    <property title="Код гос. регистрации"><![CDATA[4-03-36292-R]]></property>
+    <property title="Код ДКК"><![CDATA[RF0000013786]]></property>
+    <property title="Код РТС"/>
+    <property title="ISIN"><![CDATA[RU000A0JPZ84]]></property>
+    <property title="Наличие блокировок"/>
+    <property title="CFI"/>
+    <property title="Лицевой счет ДКК"/>
+    <property title="Вариант обслуживания"><![CDATA[Облигации (основной)]]></property>
+    <property title="Наименование выпуска"><![CDATA[Обл.ВТБ-ЛизингФин.03]]></property>
+  </item>
+</items>
